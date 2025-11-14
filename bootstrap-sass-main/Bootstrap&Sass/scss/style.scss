@@ -1,0 +1,177 @@
+@import 'custom';
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header .nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-header .nav-link:hover {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  width: 100px;
+  height: 100vh;
+}
+
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 70px 0;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.btn-hero {
+  border-width: 2px;
+}
+
+
+.icon-xxl {
+  font-size: 2.2rem;
+  color: #141414;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 4px solid $team-border;
+}
+
+.stats {
+  background: $dark-bg;
+  padding: 1.5rem 0;
+}
+
+.portfolio img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.pricing-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pricing-box .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: .5rem 0;
+}
+
+.pricing-box.featured {
+  transform: translateY(-18px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+.pricing-box.featured .featured-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  background: $brand-color;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.pricing-box.featured h6,
+.pricing-box.featured .price,
+.pricing-box.featured ul,
+.pricing-box.featured a {
+  color: #fff;
+}
+
+.pricing-box ul li {
+  margin-bottom: 6px;
+}
+
+.progress {
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #007bff, #6f42c1);
+}
+
+.contact .form-control {
+  border-radius: 5px;
+}
+
+.map img {
+  display: block;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 360px;
+  }
+
+  .team-photo {
+    width: 120px;
+    height: 120px;
+  }
+}

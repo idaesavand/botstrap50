@@ -1,0 +1,389 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #f44336 !important;
+}
+
+.hero {
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero .hero-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  border-radius: 8px;
+}
+.hero .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hero .hero-content p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+.hero .hero-content .btn-primary {
+  background-color: #f44336;
+  border: none;
+}
+.hero .hero-content .btn-primary:hover {
+  background-color: rgb(234.1839622642, 27.9622641509, 12.8160377358);
+}
+
+.features {
+  background: #fff;
+  padding: 80px 0;
+}
+.features .feature-item {
+  text-align: center;
+  padding: 20px;
+}
+.features .feature-item i {
+  font-size: 40px;
+  color: #f44336;
+  margin-bottom: 20px;
+}
+.features .feature-item h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.features .feature-item p {
+  color: #555;
+}
+
+.about {
+  padding: 100px 0;
+}
+.about .btn-dark {
+  background: #333;
+  color: #fff;
+}
+.about .btn-dark:hover {
+  background: rgb(76.5, 76.5, 76.5);
+}
+
+.team {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center;
+}
+.team .team-member {
+  margin-bottom: 30px;
+}
+.team .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.team .team-member h5 {
+  font-weight: 600;
+}
+.team .team-member p {
+  color: #555;
+}
+
+.stats {
+  background: #333;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.stats .stat-item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.stats .stat-item p {
+  margin: 0;
+}
+
+.works {
+  padding: 80px 0;
+  background: #fff;
+}
+.works img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+.works img:hover {
+  transform: scale(1.05);
+}
+
+.skills {
+  background: #f1f1f1;
+  padding: 80px 0;
+}
+.skills .progress {
+  height: 10px;
+}
+.skills .progress .progress-bar {
+  background-color: #f44336;
+}
+
+.pricing {
+  background: #333;
+  padding: 80px 0;
+}
+.pricing .card {
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  transition: 0.3s ease;
+}
+.pricing .card.highlight {
+  transform: scale(1.1);
+}
+.pricing .card.highlight .card-header {
+  background-color: #f44336;
+  color: #fff;
+}
+.pricing .card .card-header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.pricing .card .card-body {
+  background: #fff;
+  padding: 40px;
+}
+.pricing .card .btn {
+  background: #f44336;
+  color: #fff;
+}
+.pricing .card .btn:hover {
+  background: rgb(241.8830188679, 30.8188679245, 15.3169811321);
+}
+
+.contact {
+  padding: 80px 0;
+  background: #fff;
+}
+.contact .form-control {
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+.contact .btn {
+  background: #f44336;
+  border: none;
+}
+.contact .btn:hover {
+  background: rgb(234.1839622642, 27.9622641509, 12.8160377358);
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+footer .footer-icons i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+footer .footer-icons i:hover {
+  color: #f44336;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header .nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-header .nav-link:hover {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  width: 100px;
+  height: 100vh;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 70px 0;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.btn-hero {
+  border-width: 2px;
+}
+
+.icon-xxl {
+  font-size: 2.2rem;
+  color: #141414;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #007bff;
+}
+
+.stats {
+  background: #2f2f2f;
+  padding: 1.5rem 0;
+}
+
+.portfolio img {
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pricing-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pricing-box .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.pricing-box.featured {
+  transform: translateY(-18px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+.pricing-box.featured .featured-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  background: #ff4d4d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.pricing-box.featured h6,
+.pricing-box.featured .price,
+.pricing-box.featured ul,
+.pricing-box.featured a {
+  color: #fff;
+}
+
+.pricing-box ul li {
+  margin-bottom: 6px;
+}
+
+.progress {
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #007bff, #6f42c1);
+}
+
+.contact .form-control {
+  border-radius: 5px;
+}
+
+.map img {
+  display: block;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    min-height: 360px;
+  }
+  .team-photo {
+    width: 120px;
+    height: 120px;
+  }
+}/*# sourceMappingURL=style.css.map */
